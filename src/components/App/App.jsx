@@ -12,15 +12,6 @@ import Loader from 'components/Loader';
 import Container from './App.styled';
 
 function App()  {
-  // state = {
-  //   images: [],
-  //   isLoading: false,
-  //   query: '',
-  //   error: null,
-  //   page: 1,
-  //   showModal: false,
-  //   largeImageURL: null,
-  // };
 
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -90,7 +81,7 @@ function App()  {
     setTags(tags);
   };
 
-  
+
     const loadImages = images.length !== 0;
     const isLastPage = images.length === total;
     const loadMoreBtn = loadImages && !isLoading && !isLastPage;
